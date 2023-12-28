@@ -56,7 +56,6 @@ export default function Introduction() {
               priority
               style={{
                 objectFit: "cover",
-                transform: "scale(1.2)",
                 width: "100%",
                 height: "auto",
               }}
