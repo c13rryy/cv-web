@@ -54,8 +54,10 @@ export default function Introduction() {
               alt="My avatar"
               width={500}
               priority
+              placeholder="blur"
               style={{
                 objectFit: "cover",
+                transform: "scale(1.2)",
                 width: "100%",
                 height: "auto",
               }}
