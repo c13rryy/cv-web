@@ -12,11 +12,7 @@ export default function Projects() {
       sectionBackground
     >
       <MotionDiv
-<<<<<<< Updated upstream
         initial={{ opacity: 0, y: 100 }}
-=======
-        initial={{ opacity: 0, y: 50 }}
->>>>>>> Stashed changes
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true, amount: 0.2 }}
