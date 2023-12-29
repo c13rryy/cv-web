@@ -61,6 +61,7 @@ export const TECH_DATA: Array<TechData> = [
     icon: "react",
     title: "REACT",
   },
+
   {
     icon: "tailwind",
     title: "tailwind",

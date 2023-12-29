@@ -29,13 +29,15 @@ export default function Introduction() {
           <div className="flex gap-16px">
             <Link
               className="hover:scale-110 scale-100 duration-700 hover:duration-700"
-              href="/"
+              href="https://github.com/c13rryy"
+              target="_blank"
             >
               <Icon icon="git" size={36} />
             </Link>
             <Link
               className="hover:scale-110 scale-100 duration-700 hover:duration-700"
-              href="/"
+              href="https://www.linkedin.com/in/ivan-kurilenok322/"
+              target="_blank"
             >
               <Icon icon="li" size={36} />
             </Link>

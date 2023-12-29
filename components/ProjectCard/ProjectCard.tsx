@@ -1,8 +1,6 @@
 import { LinksData } from "@/Types";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-/* import sagTech from "@/public/images/sagTech.png"; */
-import { IAvailableIcons } from "@/assets/icons";
 import { Icon } from "../UI/Icon/Icon";
 import Typography from "../UI/Typo/Typography";
 
@@ -10,7 +8,7 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   image: StaticImageData;
-  tech: Array<IAvailableIcons>;
+  tech: Array<string>;
   links: Array<LinksData>;
 }
 
@@ -34,15 +32,22 @@ export default function ProjectCard({
           {title}
         </Typography>
         <Typography type="aboutP" className="mt-8px" text={description} />
-        <div className="flex flex-col justify-center gap-16px">
-          <Typography tag="h4" className="uppercase" text="Used Tech" />
-          <div className="flex gap-10px items-center justify-center">
+        <div className="flex flex-col justify-center gap-24px">
+          <Typography
+            tag="h4"
+            className="uppercase text-center"
+            text="Used Tech"
+          />
+          <ul className="flex  justify-center gap-16px">
             {tech.map(el => (
-              <div key={el}>
-                <Icon icon={el} size={30} viewBox="0 0 40 40" />
-              </div>
+              <li
+                className="bg-black_1 cursor-pointer capitalize rounded-md p-8px"
+                key={el}
+              >
+                <Typography text={el} type="thinP" className="text-[#fff]" />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
         <div className="flex items-center gap-24px">
           {links.map(info => (

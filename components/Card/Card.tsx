@@ -10,8 +10,8 @@ interface CardProps {
 
 export default function Card({ data, title, description }: CardProps) {
   return (
-    <div className="border-[1px] border-solid border-[#c0c0c0] bg-[#f5f5f5] rounded-[24px] p-24px">
-      <Typography tag="h4" text={title} />
+    <div className="border-[1px] border-solid border-[#c0c0c0] bg-[#f5f5f5] rounded-[24px] h-full p-24px card-width">
+      <Typography className="uppercase" tag="h4" text={title} />
       <div>
         {data && (
           <ul className="list-disc list-inside">
