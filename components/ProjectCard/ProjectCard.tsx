@@ -24,7 +24,7 @@ export default function ProjectCard({
   return (
     <div className="bg-[#fff] grid relative  lg:grid-cols-[550px,1fr] md:grid-cols-[430px,1fr] xl:grid-cols-[400px,1fr] grid-cols-[1fr] gap-24px rounded-[24px] py-20px xl:px-20px px-10px">
       <div className="rounded-[24px] relative w-full   lg:h-[550px]  md:h-[400px] sm:h-[430px] xs:h-[370px] h-[330px] overflow-hidden image-animation">
-        <Image src={image} alt={title} loading="lazy" placeholder="blur" />
+        <Image src={image} alt={title} loading="eager" placeholder="blur" />
       </div>
       <div className="flex flex-col items-center lg:gap-32px sm:gap-24px gap-16px justify-center">
         <Typography

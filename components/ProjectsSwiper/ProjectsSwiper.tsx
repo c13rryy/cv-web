@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import settings from "./SwiperSettings/config";
 import SliderArrow from "./SwiperNavigation/SlideArrow";
 import { useCallback, useRef } from "react";
+import { MotionDiv } from "../MotionDiv/MotionDiv";
 
 export default function ProjectSwiper() {
   const slider = useRef<SwiperRef>();
@@ -17,7 +18,13 @@ export default function ProjectSwiper() {
 
   const handlePrev = useCallback(() => slider?.current?.swiper.slidePrev(), []);
   return (
-    <div className="relative">
+    <MotionDiv
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="relative"
+    >
       <div className="sm:flex hidden gap-8px items-center justify-end mb-16px">
         <SliderArrow onClick={handlePrev} />
         <SliderArrow onClick={handleNext} isReversed />
@@ -49,6 +56,6 @@ export default function ProjectSwiper() {
         ))}
       </Swiper>
       <div id="containerForBullets" />
-    </div>
+    </MotionDiv>
   );
 }
