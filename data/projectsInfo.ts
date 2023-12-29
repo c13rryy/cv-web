@@ -8,12 +8,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
     title: "SagTech",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
-    tech: ["react", "tailwind", "remix"],
+    tech: ["React", "Tailwind", "Remix"],
     image: sagTech,
     links: [
       {
         value: "deploy version",
-        href: "/",
+        href: "https://sagtech.io/",
         icon: "live",
       },
     ],
@@ -23,12 +23,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
     title: "SPORTEX",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
-    tech: ["react", "js"],
+    tech: ["HTML", "Js", "Scss"],
     image: sportex,
     links: [
       {
         value: "deploy version",
-        href: "/",
+        href: "https://sportexclub.com/",
         icon: "live",
       },
     ],
@@ -37,12 +37,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
     title: "Artikyl",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
-    tech: ["react", "js"],
+    tech: ["HTML", "js", "Css"],
     image: artikyl,
     links: [
       {
         value: "deploy version",
-        href: "/",
+        href: "https://artykul.by/",
         icon: "live",
       },
     ],

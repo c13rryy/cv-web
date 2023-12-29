@@ -1,37 +1,26 @@
-export const ABOUT_EDUCATION = [
-  { text: "Sddaasdd" },
-  { text: "Sddaasdd" },
-  { text: "Sddaasdd" },
-];
-
-export const ABOUT_SOCIAL = [
-  { text: "Sddaasdd" },
-  { text: "Sddaasdd" },
-  { text: "Sddaasdd" },
-];
-
 export const ABOUT_DATA = [
   {
-    title: "Test1",
+    title: "Languages",
     listData: [
-      { text: "Sddaasdd" },
-      { text: "Sddaasdd" },
-      { text: "Sddaasdd" },
+      { text: "English" },
+      { text: "Belarusian" },
+      { text: "Russian" },
     ],
   },
 
   {
-    title: "Test2",
+    title: "COURSES / CERTIFICATIONS",
     listData: [
-      { text: "Sddaasdd" },
-      { text: "Sddaasdd" },
-      { text: "Sddaasdd" },
+      { text: "Html & CSS course (it-academy)" },
+      { text: "JavaScript - The Complete Guide (Udemy)" },
+      { text: "React - The Complete Guide (Udemy)" },
+      { text: "TypeScript - The Complete Guide (Udemy)" },
     ],
   },
 
   {
-    title: "Test3",
+    title: "more information",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem, dolore eum quod voluptate xercitationem nobis, nihil esse debitis maxime facere minus sint delectus velit in eos quo officiis explicabo deleniti dignissimos.  Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!",
+      "As a Junior Front-End Developer, I excel in HTML, CSS, JavaScript, React, Tailwind, and SCSS, staying current with the latest technologies for a versatile skill set. With experience in commercial development, I specialize in creating dynamic interfaces through efficient code and modern tools, ensuring high-quality web applications. I thrive as a collaborative team player, contributing to a synergistic environment for exceptional web solutions. My commitment to excellence and passion for industry trends make me a valuable asset.",
   },
 ];

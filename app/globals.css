@@ -22,7 +22,12 @@ body {
 }
 
 .card-block div:nth-child(3) {
-  flex: 1 0 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.card-block div:nth-child(3) .card-width {
+  width: 50%;
 }
 
 #containerForBullets {
@@ -118,6 +123,16 @@ body {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1300px) {
+  .card-block div:nth-child(3) .card-width {
+    width: 100%;
+  }
+
+  .card-block div:nth-child(3) {
+    display: block;
   }
 }
 
