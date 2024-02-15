@@ -12,8 +12,8 @@ export default function Projects() {
       sectionBackground
     >
       <MotionDiv
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true, amount: 0.2 }}
         className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px sm:px-117px px-[0px]"
