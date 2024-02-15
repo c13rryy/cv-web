@@ -26,7 +26,7 @@ export default function ProjectSwiper() {
         ref={slider}
         {...settings}
         loop
-        speed={1500}
+        speed={1800}
         pagination={{
           el: "#containerForBullets",
           type: "bullets",
