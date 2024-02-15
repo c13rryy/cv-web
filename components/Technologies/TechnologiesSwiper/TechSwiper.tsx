@@ -6,13 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import sliderParams from "./SwiperSettings/settings";
-/* import { useEffect, useState } from "react"; */
 
 export default function TechSwiper() {
-  /*  const [data, setData] = useState(TECH_DATA); */
-  const id = () => Math.random();
-
-  /*  useEffect(() => setData(prevState => [...prevState, ...prevState]), []); */
   return (
     <div className="max-w-2xl  xl:mt-40px sm:mt-30px mt-20px">
       <Swiper
@@ -27,8 +22,8 @@ export default function TechSwiper() {
         modules={[Navigation, Autoplay, FreeMode]}
         className="tech-swiper"
       >
-        {TECH_DATA.map(el => (
-          <SwiperSlide key={id()}>
+        {TECH_DATA.map((el, idx) => (
+          <SwiperSlide key={`${el.title}${idx}`}>
             <Icon
               icon={el.icon}
               size={40}

@@ -1,9 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const settings: any = {
   centeredSlides: false,
-  slidesPerView: "auto",
+  slidesPerView: 1,
   spaceBetween: 30,
-  loop: false,
+  speed: 2300,
+  loop: true,
   slidesPerGroup: 1,
 };
 

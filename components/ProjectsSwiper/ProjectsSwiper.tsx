@@ -25,8 +25,6 @@ export default function ProjectSwiper() {
       <Swiper
         ref={slider}
         {...settings}
-        loop
-        speed={1800}
         pagination={{
           el: "#containerForBullets",
           type: "bullets",
@@ -36,8 +34,8 @@ export default function ProjectSwiper() {
         }}
         modules={[Pagination]}
       >
-        {PROJECTS_DATA.map(el => (
-          <SwiperSlide key={el.title}>
+        {PROJECTS_DATA.map((el, idx) => (
+          <SwiperSlide key={`${el.title}${idx}`}>
             <ProjectCard
               image={el.image}
               title={el.title}
