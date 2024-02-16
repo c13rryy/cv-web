@@ -19,7 +19,7 @@ export default function Projects() {
               key={project.title}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: idx * 0.2 }}
+              transition={{ duration: 1, delay: idx * 0.2 }}
               viewport={{ once: true }}
             >
               <ProjectCard
