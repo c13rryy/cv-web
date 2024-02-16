@@ -13,8 +13,12 @@ interface ProjectModalProps {
 
 const ProjectModal = ({ title, description }: ProjectModalProps) => {
   const { projectOpen, projectModalToggle } = useContext(ModalContext);
+
+  function handleClose() {
+    projectModalToggle(title);
+  }
   return (
-    <Modal isOpen={projectOpen[title]}>
+    <Modal isOpen={projectOpen[title]} toggle={handleClose}>
       <div className="flex flex-col sm:gap-16px gap-12px justify-center">
         <div>
           <Typography

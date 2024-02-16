@@ -12,8 +12,9 @@ import toast from "react-hot-toast";
 
 export default function ModalForm() {
   const { open, toggle } = useContext(ModalContext);
+
   return (
-    <Modal isOpen={open}>
+    <Modal isOpen={open} toggle={toggle}>
       <form
         className="flex flex-col gap-16px"
         action={async formData => {

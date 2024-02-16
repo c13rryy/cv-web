@@ -8,12 +8,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
   {
     title: "SagTech",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
+      "At SagTech, we're dedicated to pushing the boundaries of technology to deliver cutting-edge websites and applications that drive your business forward. With a team of highly skilled developers and designers, we specialize in crafting bespoke digital solutions tailored to your unique requirements.",
     tech: ["React", "Tailwind", "Remix"],
     image: sagTech,
     links: [
       {
-        value: "deploy version",
+        value: "deploy",
         href: "https://sagtech.io/",
         icon: "live",
       },
@@ -23,12 +23,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
   {
     title: "Fantasture Shop",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
+      "FANTASTURE SHOP is more than just a furniture store; it's a place where your imagination comes to life and your dreams of the perfect home become a reality. Visit us today and discover the world of beauty and comfort we've created for you. Welcome to FANTASTURE SHOP - your home of dreams!",
     tech: ["React", "Next.js", "Prisma"],
     image: fantasture,
     links: [
       {
-        value: "deploy version",
+        value: "deploy",
         href: "https://fantasture-shop.vercel.app/",
         icon: "live",
       },
@@ -38,12 +38,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
   {
     title: "Sportex",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
+      "At SPORTEX, we're dedicated to providing top-notch services within the sporting community. Whether you're a seasoned athlete or just starting your fitness journey, SPORTEX has something for everyone.",
     tech: ["HTML", "Js", "Scss"],
     image: sportex,
     links: [
       {
-        value: "deploy version",
+        value: "deploy",
         href: "https://sportexclub.com/",
         icon: "live",
       },
@@ -52,12 +52,12 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
   {
     title: "Artikyl",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing,  reprehenderit et laborum, rem, dolore eum quod voluptate,             exercitationem nobis, nihil esse debitis maxime facere minus sint, Eligendi illum libero dolorum cum laboriosam corrupti quidem,",
+      "At Artikyl, we're committed to providing unparalleled legal services tailored to meet your unique needs. With a team of experienced attorneys specializing in various fields of law, we offer comprehensive solutions to individuals and businesses alike.",
     tech: ["HTML", "js", "Css"],
     image: artikyl,
     links: [
       {
-        value: "deploy version",
+        value: "deploy",
         href: "https://artykul.by/",
         icon: "live",
       },

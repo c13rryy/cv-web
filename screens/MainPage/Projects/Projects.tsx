@@ -14,12 +14,12 @@ export default function Projects() {
     >
       <div className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px lg:px-117px xl:px-[80px] px-[0px]">
         <div className="grid xl:grid-cols-2 grid-cols-1 sm:gap-24px gap-16px project-card">
-          {PROJECTS_DATA.map((project, idx) => (
+          {PROJECTS_DATA.map(project => (
             <MotionDiv
               key={project.title}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.2, delay: idx * 0.2 }}
+              transition={{ duration: 1.5 }}
               viewport={{ once: true }}
             >
               <ProjectCard
