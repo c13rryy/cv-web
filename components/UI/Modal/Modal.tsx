@@ -31,7 +31,7 @@ export default function Modal({ children, isOpen }: ModalProps) {
   return mounted
     ? createPortal(
         <div className="fixed w-full left-0px top-0px h-full flex justify-center items-center z-[150] bg-[#000] bg-opacity-25 backdrop-blur-sm">
-          <div className="mds:w-[450px] w-full modalAnim bg-[#dcdcdc] p-30px rounded-[23px] m-20px">
+          <div className="mds:w-[450px] w-full modalAnim bg-[#dcdcdc] xl:p-30px sm:p-20px p-15px rounded-[23px] m-20px">
             {children}
           </div>
         </div>,

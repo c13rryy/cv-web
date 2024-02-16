@@ -1,7 +1,8 @@
 import { MotionDiv } from "@/components/MotionDiv/MotionDiv";
-import ProjectSwiper from "@/components/ProjectsSwiper/ProjectsSwiper";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import Section from "@/components/UI/Section/Section";
 import { ANCHOR_PROJECTS } from "@/constans/path";
+import { PROJECTS_DATA } from "@/data/projectsInfo";
 
 export default function Projects() {
   return (
@@ -11,15 +12,27 @@ export default function Projects() {
       title="projects"
       sectionBackground
     >
-      <MotionDiv
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px sm:px-117px px-[0px]"
-      >
-        <ProjectSwiper />
-      </MotionDiv>
+      <div className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px lg:px-117px xl:px-[80px] px-[0px]">
+        <div className="grid xl:grid-cols-2 grid-cols-1 sm:gap-24px gap-16px project-card">
+          {PROJECTS_DATA.map((project, idx) => (
+            <MotionDiv
+              key={project.title}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                tech={project.tech}
+                links={project.links}
+              />
+            </MotionDiv>
+          ))}
+        </div>
+      </div>
     </Section>
   );
 }

@@ -1,5 +1,4 @@
 import Technologies from "@/components/Technologies/Technologies";
-import Button from "@/components/UI/Button/Button";
 import { Icon } from "@/components/UI/Icon/Icon";
 import Section from "@/components/UI/Section/Section";
 import Image from "next/image";
@@ -68,17 +67,6 @@ export default function Introduction() {
         </MotionDiv>
       </div>
       <Technologies />
-      <MotionDiv
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="sm:mt-[65px] mt-[35px]"
-      >
-        <Button className="sm:w-auto w-full" buttonSize="large">
-          Download CV{" "}
-        </Button>
-      </MotionDiv>
     </Section>
   );
 }

@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+.project-card > div:nth-child(2n) {
+  margin-top: 80px;
+}
+
 .modalAnim {
   animation: slide-down 600ms ease-out forwards;
 }
@@ -78,7 +82,7 @@ body {
 }
 
 .image-animation:hover img {
-  transform: translateY(-83%);
+  transform: translateY(-73%);
   transition: transform 10s ease-in-out;
 }
 
@@ -133,6 +137,12 @@ body {
 
   .card-block div:nth-child(3) {
     display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .project-card > div:nth-child(2n) {
+    margin-top: 0px;
   }
 }
 
