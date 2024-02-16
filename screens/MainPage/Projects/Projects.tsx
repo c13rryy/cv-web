@@ -17,9 +17,9 @@ export default function Projects() {
           {PROJECTS_DATA.map((project, idx) => (
             <MotionDiv
               key={project.title}
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: idx * 0.2 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.2, delay: idx * 0.2 }}
               viewport={{ once: true }}
             >
               <ProjectCard
