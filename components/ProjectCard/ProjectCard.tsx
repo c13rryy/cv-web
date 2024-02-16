@@ -34,7 +34,12 @@ export default function ProjectCard({
               className="rounded-[14px]"
             />
           </div>
-          <Typography tag="h4" text={title} />
+          <div className="flex items-center justify-between">
+            <Typography tag="h4" text={title} />
+            <div className="mds:block hidden">
+              <DetailsButton name={title} />
+            </div>
+          </div>
           <div className="flex flex-col gap-16px">
             <div className="flex justify-between mds:flex-row flex-col mds:items-center items-start xl:gap-16px gap-10px">
               {links.map(info => (
@@ -70,7 +75,9 @@ export default function ProjectCard({
                 </ul>
               </div>
             </div>
-            <DetailsButton name={title} />
+            <div className="mds:hidden block w-full">
+              <DetailsButton name={title} />
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,11 @@ interface DetailsButtonProps {
 const DetailsButton = ({ name }: DetailsButtonProps) => {
   const { projectModalToggle } = useContext(ModalContext);
   return (
-    <Button buttonSize="small" onClick={() => projectModalToggle(name)}>
+    <Button
+      className="mds:w-fit w-full"
+      buttonSize="small"
+      onClick={() => projectModalToggle(name)}
+    >
       More information
     </Button>
   );
