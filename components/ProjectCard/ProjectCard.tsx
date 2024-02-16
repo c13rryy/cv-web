@@ -26,8 +26,13 @@ export default function ProjectCard({
       <div className="bg-[#fff] relative flex flex-col gap-16px rounded-[16px] py-16px px-12px h-fit">
         <div className="flex flex-col gap-16px items-center">
           <div className="overflow-hidden image-animation">
-            <div className="rounded-[14px] relative w-full border-[2px] border-solid border-grey_4 bg-grey_2 lg:h-[350px] xl:h-[300px] sm:h-[350px] mds:h-[300px] h-[250px]">
-              <Image src={image} alt={title} loading="lazy" />
+            <div className="rounded-[14px] relative w-full border-[2px] border-solid border-grey_4 bg-grey_2 lg:h-[350px] xl:h-[300px] sm:h-[350px] mds:h-[300px] h-[250px] overflow-hidden">
+              <Image
+                src={image}
+                alt={title}
+                loading="eager"
+                className="rounded-[14px]"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-16px">
