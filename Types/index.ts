@@ -26,3 +26,11 @@ export interface Achivment {
   title: string;
   description: string;
 }
+
+export interface ProjectCard {
+  title: string;
+  image: StaticImageData;
+  tech: Array<string>;
+  links: Array<LinksData>;
+  description: string;
+}

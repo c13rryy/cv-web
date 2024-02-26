@@ -1,10 +1,10 @@
-import { ProjectCardProps } from "@/components/ProjectCard/ProjectCard";
 import sagTech from "@/public/images/sagTech.png";
 import artikyl from "@/public/images/artikyl.png";
 import sportex from "@/public/images/sportex.png";
 import fantasture from "@/public/images/fantasture.png";
+import { ProjectCard } from "@/Types";
 
-export const PROJECTS_DATA: ProjectCardProps[] = [
+export const PROJECTS_DATA: ProjectCard[] = [
   {
     title: "SagTech",
     description:
