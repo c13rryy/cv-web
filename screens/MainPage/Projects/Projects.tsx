@@ -24,7 +24,6 @@ export default function Projects() {
             >
               <ProjectCard
                 title={project.title}
-                description={project.description}
                 image={project.image}
                 tech={project.tech}
                 links={project.links}

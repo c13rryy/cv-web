@@ -16,7 +16,7 @@ export default function Footer() {
       id={ANCHOR_CONTACTS.slice(1)}
       className="bg-main_grey overflow-hidden"
     >
-      <div className="flex justify-between xl:gap-0px sm:gap-24px gap-16px xl:flex-row flex-col px-30px pt-32px">
+      <div className="flex justify-between xl:gap-0px sm:gap-24px gap-16px xl:flex-row flex-col sm:px-30px px-16px pt-32px">
         <MotionDiv
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.3 }}
           className="flex items-center sm:gap-10px sm:justify-start justify-between"
         >
-          <div className="flex gap-16px items-center">
+          <div className="flex sm:gap-16px gap-8px items-center">
             {NAV_FOOTER_LINKS.map(el => (
               <FooterLink key={el.value} text={el.value} href={el.href} />
             ))}
@@ -38,12 +38,12 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col sm:gap-24px gap-16px"
         >
-          <div className="flex gap-16px items-center mds:flex-row flex-col  mobile:items-start">
+          <div className="flex sm:gap-16px gap-8px items-center mds:flex-row flex-col  mobile:items-start">
             {CONTACT_LINKS.map(el => (
               <Link
                 key={el.icon}
                 href={el.href}
-                className="text-14  font-semibold leading-28 text-[#fff] duration-1000 flex items-center gap-6px animation-icon hover:text-black_1 hover:duration-1000"
+                className="text-14  font-semibold leading-28 text-[#fff] px-7px py-4px flex items-center gap-6px animation-icon"
               >
                 <Icon
                   icon={el.icon ?? "mail"}

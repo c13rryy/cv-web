@@ -63,9 +63,15 @@ body {
   transition: stroke 1s ease;
 }
 
-.animation-icon:hover .icon-hover {
-  stroke: #000;
-  transition: stroke 1s ease;
+.animation-icon {
+  border: 2px solid transparent;
+  transition: 0.8s;
+  border-radius: 16px;
+}
+
+.animation-icon:hover {
+  border: 2px solid black;
+  transition: 0.8s;
 }
 
 .tech-swiper .swiper-wrapper .swiper-slide {

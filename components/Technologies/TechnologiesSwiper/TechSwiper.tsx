@@ -1,15 +1,20 @@
 "use client";
 
 import { Icon } from "@/components/UI/Icon/Icon";
-import { TECH_DATA } from "@/data/technologies";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import sliderParams from "./SwiperSettings/settings";
+import { TechData } from "@/Types";
 
-export default function TechSwiper() {
+interface TechSwiperProps {
+  techData: Array<TechData>;
+  sliderWidth: string;
+}
+
+export default function TechSwiper({ techData, sliderWidth }: TechSwiperProps) {
   return (
-    <div className="max-w-2xl  xl:mt-40px sm:mt-30px mt-20px">
+    <div className={`xl:mt-40px sm:mt-30px mt-20px ${sliderWidth}`}>
       <Swiper
         navigation
         freeMode
@@ -22,7 +27,7 @@ export default function TechSwiper() {
         modules={[Navigation, Autoplay, FreeMode]}
         className="tech-swiper"
       >
-        {TECH_DATA.map((el, idx) => (
+        {techData.map((el, idx) => (
           <SwiperSlide key={`${el.title}${idx}`}>
             <Icon
               icon={el.icon}

@@ -8,7 +8,7 @@ interface SectionProp {
   title?: string;
   styles?: string;
   sectionBackground: boolean;
-  anchor: string;
+  anchor?: string;
 }
 
 export default function Section({

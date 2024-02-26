@@ -1,23 +1,17 @@
 "use client";
 
-import Button from "@/components/UI/Button/Button";
-import { ModalContext } from "@/store";
-import { useContext } from "react";
+import { buttonConst } from "@/components/UI/Button/helpers";
+import Link from "next/link";
 
 interface DetailsButtonProps {
-  name: string;
+  href: string;
 }
 
-const DetailsButton = ({ name }: DetailsButtonProps) => {
-  const { projectModalToggle } = useContext(ModalContext);
+const DetailsButton = ({ href }: DetailsButtonProps) => {
   return (
-    <Button
-      className="mds:w-fit w-full"
-      buttonSize="small"
-      onClick={() => projectModalToggle(name)}
-    >
+    <Link href={href} className={`mds:w-fit w-full ${buttonConst.smallSize}`}>
       More information
-    </Button>
+    </Link>
   );
 };
 

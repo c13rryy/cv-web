@@ -1,3 +1,4 @@
+import { TECH_DATA } from "@/data/technologies";
 import { MotionDiv } from "../MotionDiv/MotionDiv";
 import Typography from "../UI/Typo/Typography";
 import TechSwiper from "./TechnologiesSwiper/TechSwiper";
@@ -11,7 +12,7 @@ export default function Technologies() {
       viewport={{ once: true }}
     >
       <Typography tag="h4" text="Tech Stack" />
-      <TechSwiper />
+      <TechSwiper sliderWidth="max-w-2xl" techData={TECH_DATA} />
     </MotionDiv>
   );
 }

@@ -19,6 +19,9 @@ import Ts from "./techStack/Ts";
 import Phone from "./Phone";
 import Arrow from "./Arrow";
 import Live from "./Live";
+import Prisma from "./techStack/Prisma";
+import Redis from "./techStack/Redis";
+import Zod from "./techStack/Zod";
 
 export const content = {
   react: React,
@@ -42,6 +45,9 @@ export const content = {
   phone: Phone,
   arrow: Arrow,
   live: Live,
+  prisma: Prisma,
+  redis: Redis,
+  zod: Zod,
 };
 
 export type IAvailableIcons = keyof typeof content;

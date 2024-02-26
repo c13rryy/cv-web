@@ -21,7 +21,7 @@ export const PROJECTS_DATA: ProjectCardProps[] = [
   },
 
   {
-    title: "Fantasture Shop",
+    title: "Fantasture",
     description:
       "FANTASTURE SHOP is more than just a furniture store; it's a place where your imagination comes to life and your dreams of the perfect home become a reality. Visit us today and discover the world of beauty and comfort we've created for you. Welcome to FANTASTURE SHOP - your home of dreams!",
     tech: ["React", "Next.js", "Prisma"],

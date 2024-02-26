@@ -38,6 +38,14 @@ export const TECH_DATA: Array<TechData> = [
     title: "Remix",
   },
   {
+    icon: "prisma",
+    title: "Prisma",
+  },
+  {
+    icon: "redis",
+    title: "Redis",
+  },
+  {
     icon: "mongodb",
     title: "MongoDB",
   },
@@ -77,6 +85,14 @@ export const TECH_DATA: Array<TechData> = [
   {
     icon: "remix",
     title: "Remix",
+  },
+  {
+    icon: "prisma",
+    title: "Prisma",
+  },
+  {
+    icon: "redis",
+    title: "Redis",
   },
   {
     icon: "mongodb",

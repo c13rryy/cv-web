@@ -19,7 +19,7 @@ export default function FooterLink({ text, href }: FooterLinkProps) {
         anchorScroll(id);
       }}
       href={`/${href}`}
-      classes="text-14 font-semibold leading-28 text-[#fff] duration-1000 hover:text-black_1 hover:duration-1000"
+      classes="text-14 font-semibold leading-28 text-[#fff] px-[6px] animation-icon"
     >
       {text}
     </LinkCustom>

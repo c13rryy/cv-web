@@ -2,9 +2,9 @@ export const ABOUT_DATA = [
   {
     title: "Languages",
     listData: [
-      { text: "English" },
-      { text: "Belarusian" },
-      { text: "Russian" },
+      { text: "English (B1)" },
+      { text: "Belarusian (C1)" },
+      { text: "Russian (C2)" },
     ],
   },
 
