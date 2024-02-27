@@ -2,6 +2,7 @@ import { PROJECT_DATA } from "@/data/project-data";
 import Achivments from "@/screens/ProjectPage/Achivments/Achivments";
 import ProjectFeatures from "@/screens/ProjectPage/ProjectFeatures/ProjectFeatures";
 import ProjectInfo from "@/screens/ProjectPage/ProjectInfo/ProjectInfo";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 interface ProjectPage {
@@ -9,6 +10,11 @@ interface ProjectPage {
     projectId: string;
   };
 }
+
+export const metadata: Metadata = {
+  title: "Ivan Kurylenak | Front-end Developer",
+  description: "Here you will find detailed information about my projects",
+};
 
 const page = ({ params }: ProjectPage) => {
   const projectIndex = PROJECT_DATA.findIndex(
