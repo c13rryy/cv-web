@@ -50,9 +50,9 @@ export const PROJECTS_DATA: ProjectCard[] = [
     ],
   },
   {
-    title: "Artikyl",
+    title: "Artukyl",
     description:
-      "At Artikyl, we're committed to providing unparalleled legal services tailored to meet your unique needs. With a team of experienced attorneys specializing in various fields of law, we offer comprehensive solutions to individuals and businesses alike.",
+      "At Artukyl, we're committed to providing unparalleled legal services tailored to meet your unique needs. With a team of experienced attorneys specializing in various fields of law, we offer comprehensive solutions to individuals and businesses alike.",
     tech: ["HTML", "js", "Css"],
     image: artikyl,
     links: [

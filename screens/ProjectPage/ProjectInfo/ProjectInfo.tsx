@@ -40,7 +40,7 @@ const ProjectInfo: FC<ProjectInfoProps> = ({
               fill
               placeholder="blur"
               priority
-              className="object-cover rounded-[20px] object-[top_left]"
+              className="object-cover rounded-[20px]"
             />
           </div>
         </MotionDiv>

@@ -13,7 +13,7 @@ const Achivments: FC<AchivmentsProps> = ({ achivments }) => {
     <Section
       title="Achivments"
       sectionBackground
-      styles="mt-[90px] xl:mt-[70px] sm:mt-[50px] mt-[40px]"
+      styles="2xl:mt-[90px] xl:mt-[70px] sm:mt-[50px] mt-[40px]"
     >
       <div className="flex xl:flex-row flex-col xl:gap-24px gap-16px sm:mt-40px mt-24px">
         {achivments.map((el, idx) => (

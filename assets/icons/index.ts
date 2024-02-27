@@ -22,6 +22,8 @@ import Live from "./Live";
 import Prisma from "./techStack/Prisma";
 import Redis from "./techStack/Redis";
 import Zod from "./techStack/Zod";
+import Storybook from "./techStack/Storybook";
+import Graph from "./techStack/Graph";
 
 export const content = {
   react: React,
@@ -48,6 +50,8 @@ export const content = {
   prisma: Prisma,
   redis: Redis,
   zod: Zod,
+  storybook: Storybook,
+  graphql: Graph,
 };
 
 export type IAvailableIcons = keyof typeof content;

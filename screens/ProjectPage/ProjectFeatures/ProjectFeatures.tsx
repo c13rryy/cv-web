@@ -18,9 +18,9 @@ const ProjectFeatures: FC<ProjectFeaturesProps> = ({
       <MotionDiv
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="sm:mt-60px mt-30px xh:px-[140px] 2xl:px-117px md:px-[95px] px-[0]"
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="sm:mt-60px mt-30px xh:px-[170px] 2xl:px-117px lg:px-[145px] md:px-[95px] px-[0]"
       >
         <FeaturesSlider features={features} />
       </MotionDiv>

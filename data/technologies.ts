@@ -14,6 +14,10 @@ export const TECH_DATA: Array<TechData> = [
     title: "JS",
   },
   {
+    icon: "storybook",
+    title: "Storybook",
+  },
+  {
     icon: "ts",
     title: "TS",
   },
@@ -36,6 +40,10 @@ export const TECH_DATA: Array<TechData> = [
   {
     icon: "remix",
     title: "Remix",
+  },
+  {
+    icon: "graphql",
+    title: "GraphQL",
   },
   {
     icon: "prisma",
@@ -62,6 +70,10 @@ export const TECH_DATA: Array<TechData> = [
     title: "JS",
   },
   {
+    icon: "storybook",
+    title: "Storybook",
+  },
+  {
     icon: "ts",
     title: "TS",
   },
@@ -85,6 +97,10 @@ export const TECH_DATA: Array<TechData> = [
   {
     icon: "remix",
     title: "Remix",
+  },
+  {
+    icon: "graphql",
+    title: "GraphQL",
   },
   {
     icon: "prisma",

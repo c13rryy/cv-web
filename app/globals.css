@@ -78,6 +78,10 @@ body {
   width: 70px !important;
 }
 
+.feature-swiper .swiper-wrapper .swiper-slide {
+  height: auto !important;
+}
+
 .tech-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }

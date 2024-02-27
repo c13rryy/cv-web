@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useCallback } from "react";
+import { FC, useCallback, useMemo } from "react";
 import { useRef } from "react";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -19,6 +19,16 @@ const FeaturesSlider: FC<FeaturesSliderProps> = ({ features }) => {
   const handleNext = useCallback(() => slider?.current?.swiper.slideNext(), []);
 
   const handlePrev = useCallback(() => slider?.current?.swiper.slidePrev(), []);
+
+  const raitingIdx = useMemo(
+    () => features.findIndex(el => el.name === "Raiting"),
+    [features]
+  );
+
+  const adminIdx = useMemo(
+    () => features.findIndex(el => el.name === "Admin dashboard"),
+    [features]
+  );
 
   return (
     <div className="relative">
@@ -41,15 +51,30 @@ const FeaturesSlider: FC<FeaturesSliderProps> = ({ features }) => {
         modules={[Pagination]}
         className="feature-swiper"
       >
-        {features.map((feature, idx) => (
-          <SwiperSlide key={`${feature.name}-${idx}`}>
-            <FeatureCard
-              featureName={feature.name}
-              description={feature.description}
-              imgUrl={feature.img}
-            />
-          </SwiperSlide>
-        ))}
+        {features.map((feature, idx) => {
+          if (idx === adminIdx || idx === raitingIdx) {
+            return (
+              <SwiperSlide key={`${feature.name}-${idx}`}>
+                <FeatureCard
+                  featureName={feature.name}
+                  description={feature.description}
+                  imgUrl={feature.img}
+                  imageStyles="object-left"
+                />
+              </SwiperSlide>
+            );
+          } else {
+            return (
+              <SwiperSlide key={`${feature.name}-${idx}`}>
+                <FeatureCard
+                  featureName={feature.name}
+                  description={feature.description}
+                  imgUrl={feature.img}
+                />
+              </SwiperSlide>
+            );
+          }
+        })}
       </Swiper>
       <div id="containerForBullets" />
     </div>
