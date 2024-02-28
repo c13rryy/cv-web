@@ -1,5 +1,5 @@
 import { PROJECT_DATA } from "@/data/project-data";
-import Achivments from "@/screens/ProjectPage/Achivments/Achivments";
+import Achievements from "@/screens/ProjectPage/Achievements/Achievements";
 import ProjectFeatures from "@/screens/ProjectPage/ProjectFeatures/ProjectFeatures";
 import ProjectInfo from "@/screens/ProjectPage/ProjectInfo/ProjectInfo";
 import { Metadata } from "next";
@@ -38,7 +38,7 @@ const page = ({ params }: ProjectPage) => {
         projectName={currentProject.name}
         features={currentProject.features}
       />
-      <Achivments achivments={currentProject.achivments} />
+      <Achievements achievements={currentProject.achivments} />
     </>
   );
 };
