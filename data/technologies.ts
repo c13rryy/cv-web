@@ -30,6 +30,10 @@ export const TECH_DATA: Array<TechData> = [
     title: "tailwind",
   },
   {
+    icon: "tg",
+    title: "Tg api",
+  },
+  {
     icon: "sass",
     title: "sass",
   },
@@ -85,6 +89,10 @@ export const TECH_DATA: Array<TechData> = [
   {
     icon: "tailwind",
     title: "tailwind",
+  },
+  {
+    icon: "tg",
+    title: "Tg api",
   },
   {
     icon: "sass",
