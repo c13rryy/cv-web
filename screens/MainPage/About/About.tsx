@@ -12,7 +12,7 @@ export default function About() {
       sectionBackground={false}
       title="About me"
     >
-      <div className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px flex card-block flex-wrap 2xl:gap-[20px] xl:gap-[15px] gap-10px">
+      <div className="2xl:mt-52px xl:mt-40px sm:mt-30px mt-20px grid xl:grid-cols-[1fr,1fr] grid-cols-1 2xl:gap-[20px] xl:gap-[15px] gap-10px">
         {ABOUT_DATA.map((el, idx) => (
           <MotionDiv
             initial={{ opacity: 0, y: 100 }}

@@ -23,4 +23,17 @@ export const ABOUT_DATA = [
     description:
       "As a Junior Front-End Developer, I excel in HTML, CSS, JavaScript, React, Tailwind, and SCSS, staying current with the latest technologies for a versatile skill set. With experience in commercial development, I specialize in creating dynamic interfaces through efficient code and modern tools, ensuring high-quality web applications. I thrive as a collaborative team player, contributing to a synergistic environment for exceptional web solutions. My commitment to excellence and passion for industry trends make me a valuable asset.",
   },
+  {
+    title: "personal achievements",
+    listData: [
+      { text: "Creating unique hooks for Telegram mini apps" },
+      { text: "High speed and quality of development" },
+      {
+        text: "Collaboration within a large team and constant communication with team members",
+      },
+      {
+        text: "Developing visually appealing and user-friendly interfaces using React",
+      },
+    ],
+  },
 ];

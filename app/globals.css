@@ -20,20 +20,6 @@ body {
   animation: slide-down 600ms ease-out forwards;
 }
 
-.card-block div:nth-child(1),
-.card-block div:nth-child(2) {
-  flex: 1 0 48%;
-}
-
-.card-block div:nth-child(3) {
-  display: grid;
-  justify-items: center;
-}
-
-.card-block div:nth-child(3) .card-width {
-  width: 50%;
-}
-
 #containerForBullets {
   display: none;
   gap: 6px;
@@ -140,16 +126,6 @@ body {
   }
 }
 
-@media (max-width: 1300px) {
-  .card-block div:nth-child(3) .card-width {
-    width: 100%;
-  }
-
-  .card-block div:nth-child(3) {
-    display: block;
-  }
-}
-
 @media (max-width: 1023px) {
   .project-card > div:nth-child(2n) {
     margin-top: 0px;
@@ -157,11 +133,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .card-block div:nth-child(1),
-  .card-block div:nth-child(2) {
-    flex: 1 0 100%;
-  }
-
   #containerForBullets {
     display: flex;
   }
