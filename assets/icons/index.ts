@@ -24,6 +24,8 @@ import Redis from "./techStack/Redis";
 import Zod from "./techStack/Zod";
 import Storybook from "./techStack/Storybook";
 import Graph from "./techStack/Graph";
+import Redux from "./techStack/Redux";
+import Jest from './techStack/Jest'
 
 export const content = {
   react: React,
@@ -52,6 +54,8 @@ export const content = {
   zod: Zod,
   storybook: Storybook,
   graphql: Graph,
+  redux: Redux,
+  jest: Jest,
 };
 
 export type IAvailableIcons = keyof typeof content;
