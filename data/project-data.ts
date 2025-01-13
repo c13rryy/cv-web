@@ -3,6 +3,7 @@ import fantasture from "@/public/images/project/fantasture-avatar.png";
 import sagTech from "@/public/images/project/sagTech-avatar.png";
 import artikul from "@/public/images/project/artikul-avatar.png";
 import sportex from "@/public/images/project/sportex-avatar.png";
+import tapply from "@/public/images/project/tapply.webp";
 import { StaticImageData } from "next/image";
 import authFeature from "@/public/images/features/fantasture/feature1.png";
 import comments from "@/public/images/features/fantasture/feature2.png";
@@ -24,6 +25,7 @@ import {
   FANTASTURE_TECH,
   SAGTECH_TECH,
   SPORTEX_TECH,
+  TAPPLY_TECH,
 } from "./project-technologies";
 
 interface ProjectData {
@@ -32,7 +34,7 @@ interface ProjectData {
   image: string | StaticImageData;
   technologies: Array<TechData>;
   links: Array<LinksData>;
-  features: Array<FeatureProps>;
+  features?: Array<FeatureProps>;
   achivments: Array<Achivment>;
 }
 
@@ -239,6 +241,37 @@ export const PROJECT_DATA: Array<ProjectData> = [
         description:
           "Ensured seamless adaptability for mobile devices, optimizing the platform's layout and functionality to deliver a smooth and intuitive experience across various screen sizes and devices.",
         img: mobileSportex,
+      },
+    ],
+    achivments: [
+      {
+        title: "Maximized Performance and SEO",
+        description:
+          "Implemented strategies for lightning-fast performance and high search engine visibility, optimizing every aspect of the website for speed, responsiveness, and SEO",
+      },
+      {
+        title: "Cutting-Edge Technology Integration",
+        description:
+          "Incorporated the latest technologies and libraries, staying ahead of the curve to deliver modern features and functionalities",
+      },
+      {
+        title: "Rapid, High-Quality Development",
+        description:
+          "Completed the project swiftly without compromising quality, demonstrating efficiency and excellence in every stage of development.",
+      },
+    ],
+  },
+  {
+    name: "Tapply",
+    description:
+      "Tapply is an innovative builder solution for creating Telegram web applications within the Telegram platform. Similar to how Shopify empowers e-commerce, Tapply enables users to choose from a variety of templates, such as e-commerce applications or appointment booking systems. Users can easily create their custom applications and gain access to an administrative panel for comprehensive analytics and marketing management.",
+    image: tapply,
+    technologies: TAPPLY_TECH,
+    links: [
+      {
+        value: "deploy",
+        href: "https://t.me/tapply_user_bot",
+        icon: "live",
       },
     ],
     achivments: [

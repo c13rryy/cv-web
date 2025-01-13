@@ -26,6 +26,7 @@ import Storybook from "./techStack/Storybook";
 import Graph from "./techStack/Graph";
 import Redux from "./techStack/Redux";
 import Jest from './techStack/Jest'
+import Tg from "./techStack/Tg";
 
 export const content = {
   react: React,
@@ -56,6 +57,7 @@ export const content = {
   graphql: Graph,
   redux: Redux,
   jest: Jest,
+  tg: Tg,
 };
 
 export type IAvailableIcons = keyof typeof content;

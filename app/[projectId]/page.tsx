@@ -34,10 +34,12 @@ const page = ({ params }: ProjectPage) => {
         image={currentProject.image}
         links={currentProject.links}
       />
-      <ProjectFeatures
-        projectName={currentProject.name}
-        features={currentProject.features}
-      />
+      {currentProject.features && (
+        <ProjectFeatures
+          projectName={currentProject.name}
+          features={currentProject.features}
+        />
+      )}
       <Achievements achievements={currentProject.achivments} />
     </>
   );

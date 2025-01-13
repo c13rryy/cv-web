@@ -111,6 +111,69 @@ export const FANTASTURE_TECH: Array<TechData> = [
   },
 ];
 
+export const TAPPLY_TECH: Array<TechData> = [
+  {
+    icon: "js",
+    title: "JS",
+  },
+  {
+    icon: "ts",
+    title: "TS",
+  },
+  {
+    icon: "tg",
+    title: "Tg api",
+  },
+  {
+    icon: "react",
+    title: "REACT",
+  },
+  {
+    icon: "tailwind",
+    title: "tailwind",
+  },
+  {
+    icon: "js",
+    title: "JS",
+  },
+  {
+    icon: "ts",
+    title: "TS",
+  },
+  {
+    icon: "tg",
+    title: "Tg api",
+  },
+  {
+    icon: "react",
+    title: "REACT",
+  },
+  {
+    icon: "tailwind",
+    title: "tailwind",
+  },
+  {
+    icon: "js",
+    title: "JS",
+  },
+  {
+    icon: "ts",
+    title: "TS",
+  },
+  {
+    icon: "tg",
+    title: "Tg api",
+  },
+  {
+    icon: "react",
+    title: "REACT",
+  },
+  {
+    icon: "tailwind",
+    title: "tailwind",
+  },
+];
+
 export const SAGTECH_TECH: Array<TechData> = [
   {
     icon: "js",

@@ -2,6 +2,7 @@ import sagTech from "@/public/images/sagTech.png";
 import artikyl from "@/public/images/artikyl.png";
 import sportex from "@/public/images/sportex.png";
 import fantasture from "@/public/images/fantasture.png";
+import tapply from "@/public/images/project/tapply.webp";
 import { ProjectCard } from "@/Types";
 
 export const PROJECTS_DATA: ProjectCard[] = [
@@ -59,6 +60,20 @@ export const PROJECTS_DATA: ProjectCard[] = [
       {
         value: "deploy",
         href: "https://artykul.by/",
+        icon: "live",
+      },
+    ],
+  },
+  {
+    title: "Tapply",
+    description:
+      "Tapply is an innovative builder solution for creating Telegram web applications within the Telegram platform. Similar to how Shopify empowers e-commerce, Tapply enables users to choose from a variety of templates, such as e-commerce applications or appointment booking systems. Users can easily create their custom applications and gain access to an administrative panel for comprehensive analytics and marketing management.",
+    tech: ["React", "Tailwind", "Tg Mini Apps"],
+    image: tapply,
+    links: [
+      {
+        value: "deploy",
+        href: "https://t.me/tapply_user_bot",
         icon: "live",
       },
     ],

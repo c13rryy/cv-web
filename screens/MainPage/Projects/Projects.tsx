@@ -27,6 +27,7 @@ export default function Projects() {
                 image={project.image}
                 tech={project.tech}
                 links={project.links}
+                disabledAnimation={project.title === "Tapply"}
               />
             </MotionDiv>
           ))}

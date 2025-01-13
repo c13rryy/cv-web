@@ -18,6 +18,5 @@ const uniqueTechData: Array<TechData> = [
   { icon: "prisma", title: "Prisma" },
   { icon: "redis", title: "Redis" },
   { icon: "mongodb", title: "MongoDB" },
-];
 
 export const TECH_DATA = createTechDataWithRepetitions(uniqueTechData);
