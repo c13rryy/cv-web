@@ -3,7 +3,7 @@ import { Icon } from "@/components/UI/Icon/Icon";
 import Section from "@/components/UI/Section/Section";
 import Image from "next/image";
 import Link from "next/link";
-import main from "@/public/images/main.jpg";
+import main from "@/public/images/main.png";
 import Typography from "@/components/UI/Typo/Typography";
 import { MotionDiv } from "@/components/MotionDiv/MotionDiv";
 import { ANCHOR_HOME } from "@/constans/path";
